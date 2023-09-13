@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "d245024c-9df6-4d1b-89a2-4ff0b8bf885e",
+		"name": "Clients",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13012562"
+	},
+	"item": [
+		{
+			"name": "GetAllClients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetClientById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/clients/65024a0e03c7e02dd63a26ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clients",
+						"65024a0e03c7e02dd63a26ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateClient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nome do Cliente\",\r\n    \"age\": 30,\r\n    \"email\": \"cliente@email.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateClient",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nome do Cliente\",\r\n    \"age\": 31,\r\n    \"email\": \"cliente@email.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/clients/650249b903c7e02dd63a26cb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clients",
+						"650249b903c7e02dd63a26cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClient",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/clients/650249b903c7e02dd63a26cb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clients",
+						"650249b903c7e02dd63a26cb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
